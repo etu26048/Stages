@@ -1,0 +1,90 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July"
+    ],
+    "datasets": [
+      {
+        "data": [
+          -7,
+          -60,
+          18,
+          78,
+          -17,
+          93,
+          70
+        ],
+        "label": "Dataset 1",
+        "yAxisID": "y-axis-1",
+        "backgroundColor": "rgba(220,220,220,0.5)"
+      },
+      {
+        "data": [
+          45,
+          -88,
+          12,
+          -73,
+          -70,
+          -55,
+          64
+        ],
+        "label": "Dataset 2",
+        "yAxisID": "y-axis-2",
+        "hidden": true,
+        "backgroundColor": "rgba(151,187,205,0.5)"
+      },
+      {
+        "data": [
+          -52,
+          -33,
+          76,
+          -64,
+          -49,
+          -74,
+          89
+        ],
+        "label": "Dataset 3",
+        "yAxisID": "y-axis-1",
+        "backgroundColor": "#f5b041"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "title": {
+      "display": true,
+      "text": "Chart.js Bar Chart - Multi Axis"
+    },
+    "hover": {
+      "mode": "label",
+      "animationDuration": 400
+    },
+    "scales": {
+      "yAxes": [
+        {
+          "type": "linear",
+          "display": true,
+          "id": "y-axis-1",
+          "position": "left"
+        },
+        {
+          "type": "linear",
+          "display": true,
+          "id": "y-axis-2",
+          "position": "right",
+          "gridLines": {
+            "drawOnChartArea": false
+          }
+        }
+      ]
+    }
+  }
+}
+
