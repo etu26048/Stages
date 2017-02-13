@@ -1,0 +1,33 @@
+avant le 06 /02 : Configuration de eclipse, de intelliJ + démonstration Dashboard (le faire tourner) + comprendre Vaadin, les éléments Vaadin, les composants, l'architecture, exercice (test de plusieurs fonctionnalité) + ajout d'un menu et programmation de chart + documentation de Vaadin sur leur site internet (commencement) 
+06 / 02 : Utilisation de Charts Js comme Addon pour Vaadin, programmation de charts + essayer de faire un Chart update en temps réel  + Stand up d'un membre de la boite ( technologies utilisées : JIRA, GIT, BITBUCKET, ONEDRIVE, SYNO, ... ) Le contacter si plus de questions
+07 / 02 :  Partie Analyse , comment exporter les charts pour les mettre dans le configurator, en JSON ? Y'a pas une partie générique ? 
+Analyse : Pour les chart, quelles sont les classes qui en hérite ? quelles sont les classses qui sont en relation ? Comment les sauvés dans la database ? comment présenter ça à l'utilisateur ? via formulaire ? mettre le chart dans le configurator ,ce qui va permettre au consultant / client de le parametré (couleur, fond, etc) via un formulaire entre autre.
+Documentation des différents type de charts
+08 / 02 : Finition de la partie analyse (pas encore fais corrigé par Dimitri) + production de charts en javascript ( j'ai du le mettre sur un serveur car sinon cross multi platform), j'ai réussi à loader une config et des données d'un chart depuis un fichier JSON, le tout en utilisant le langage JQuery (identificateur $) pour récupérer les données dans le fichier JSON
+je vais essayer de faire fonctionner le thread pour que le chart se mette à jour automatiquement, ça fais 3 jours que j'essaie et je ne trouve pas, Le thread fonctionne mais le rafraîchissement du chart ne se fait que si on click dessus (addClickListener). La solution est d'ajouter un poll, pourquoi ? https://vaadin.com/forum/#!/thread/231272/11961019
+Peut-être revoir l'architecture de Vaadin ( server-side ,etc). J'ai réussi à faire fonctionner le bar chart (il manquait les données, pfff).
+
+Difference between website and web application
+This is totally personal and subjective, but I'd say that a website is defined by its content, while a web application is defined by its interaction with the user. That is, a website can plausibly consist of a static content repository that's dealt out to all visitors, while a web application depends on interaction and requires programmatic user input and data processing.
+For example, a news site would be a "website", but a spreadsheet or a collaborative calendar would be web "applications". The news site shows essentially the same information to all visitors, while the calendar processes individual data.
+
+Lambda expressions
+L'utilisation d'une expression lambda évite d'avoir à écrire le code nécessaire à la déclaration de la classe anonyme et de la méthode.
+Une expression lambda est une fonction anonyme : sa définition se fait sans déclaration explicite du type de retour, ni de modificateurs d'accès ni de nom. C'est un raccourci syntaxique qui permet de définir une méthode directement à l'endroit où elle est utilisée.
+Une expression lambda est donc un raccourci syntaxique qui simplifie l'écriture de traitements passés en paramètre. Elle est particulièrement utile notamment lorsque le traitement n'est utile qu'une seule fois : elle évite d'avoir à écrire une méthode dans une classe.
+
+Le livre de vaadin explique pas mal de chose, s'y référer pour le TFE ! 
+
+09 / 02 : Technologie utilisée : Cassandra Query Language (CQL), MQTT, Java, Javascript, JQuery
+Lire le livre de Vaadin. Apparemment l'analyse est correct ? Dimitri me dit qu'il faut peut-être que j'explique comment fonctionne Vaadin dans mon TFE et que ça pourrai faire partie intégrante de l'analyse.
+Essayer de comprendre un peu plus comment fonctionne Vaadin
+Thread pour avancer sur l'axe des x et mettre à jour les données.
+
+10 /02 : Mettre à jour le graphique via un thread ainsi que les données?
+Réussi à faire fonctionner le chart en real time, 
+
+13 / 02 : Test du thread, combien de temps il peut durer ? départ : 9:39
+
+14 / 02 :
+
+15 / 02 : 
